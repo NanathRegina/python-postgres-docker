@@ -20,7 +20,7 @@ services:
             - db
             - queue
         environment: 
-            - DB_NAME=envio_email
+            - DB_NAME=envio
     queue:
         image: redis:3.2
         networks: 
