@@ -19,6 +19,8 @@ services:
         depends_on: 
             - db
             - queue
+        environment: 
+            - DB_NAME=envio_email
     queue:
         image: redis:3.2
         networks: 
